@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Cyr";
+    src: url("fonts/Cyr.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Cyr", sans-serif;
+}
+
+a {
+    text-decoration: underline ;
+    color: white;
+    
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    
+    background-color: #01192D;
+    
+    color: white;
+    
+    text-align: center;
+    align-items: center;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+footer {
+    text-align: left;
+    padding-left: 2vw;
+    padding-block: 1.5vh;
+    background-color: #323232;   
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background: linear-gradient(to bottom, 
+    #00192F 0%, 
+    #251111 25%, 
+    #FF8C00 50%,
+    #A518B2 75%,
+    #01192E 100%);
+}
+
+@media(width<1024px){
+    .main-img {
+        width: 100%;
+    }
+
+
+    .div1 {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 3vh
+    }
+
+    .div1-img {
+        width: 50vw;
+        margin-left: 0.5vw;
+    }
+
+    .div1-p {
+        font-size: larger;
+        margin-top: 6vh;
+        margin-right: 0.5vw;
+    }
+
+    .div2 {
+        margin-top: 5vh;
+    }
+
+    .div2-1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div2-1-h {
+        margin-top: 7vh;
+        margin-left: 4vw;
+        font-size: 3.5rem;
+    }
+
+    .div2-1-p {
+        margin-top: 2vh;
+        margin-left: 4vw;
+        font-size: 1.5rem;
+    }
+
+    .div2-1-img {
+        width: 50vw;
+        margin-right: 0.5vw;
+    }
+
+    .div2-2 {
+        margin-left: 1vh;
+        margin-right: 1vh;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 6px;
+        color: black;
+        width: 30vw;
+
+        padding-bottom: 1vh;
+
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);}
+
+    .card-h {
+        font-size: 1.25rem;
+        margin-top: 0.5vh
+    }
+
+    .card-p {
+        margin-top: 1vh;
+        font-size: 1rem;
+    }
+
+    .div3 {
+        display: flex;
+    }
+
+    .div3-2 {
+        margin-top: 5vh;
+    }
+
+    .div3-h {
+        font-size: 2rem;
+        margin-right: 0.5vw
+    }
+
+    .div3-p {
+        font-size: 1rem;
+        margin-top: 1.5vh;
+    }
+
+    .div3-button {
+        margin-top: 1vh;
+        padding-inline: 2vw;
+        padding-block: 0.5vh;
+    }
+}
+
+@media(width > 1024px) {
+    .main-img {
+        position: absolute;
+        width: 50vw;
+        top: 0;
+        left: 25vw;
+    }
+
+    main {
+        margin-top: 93.39vh;
+    }
+}
